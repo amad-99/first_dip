@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Amad" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="shortcut icon" href="{{ url_for('static', filename='icon.ico') }}">
+
+  <title>Amad's</title>  
+
+<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+<link href="./static/index.css" rel="stylesheet"></head>
+
+<body class="minimal">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a class="my_links" href="./" title="">01 : Home</a></li>
+          <li><a class="my_links" href="./about" title="">02 : About me</a></li>
+          <li><a class="my_links" href="./contact" title="">03 : Contact me</a></li>
+        </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<!-- Add your site or app content here -->
+  <div class="whole-back-wall hero-full-container background-image-container white-text-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Hello,<br>
+                <span id="typed-strings">
+                  <span>I'm Amad Mohammed</span>
+                  <span>A Web Developer</span>
+                  <span>javascript And Python</span>
+                  <span>node.js And flask</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     type();
+     movingBackgroundImage();
+  });
+</script>
+
+
+<script type="text/javascript" src="./static/main.70a66962.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+
+  <script>
+    $(".whole-back-wall").css({"background-image":"url('./static/assets/images/qw.jpg')","transition":"500ms","background-position":"70% 50%"})
+    $(".my_links").mouseenter(function(){
+      $(this).css("text-decoration","line-through")
+      $(".whole-back-wall").css("filter","blur(8px)")
+    });
+    $(".my_links").mouseleave(function(){
+      $(this).css("text-decoration","none")
+      $(".whole-back-wall").css("filter","blur(0px)")
+    });
+    $(".navbar-toggle").css("background-color","transparent")
+  </script>
+
+</body>
+
+</html>
